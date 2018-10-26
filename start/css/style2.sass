@@ -216,10 +216,10 @@
 	0 6px #fff
 
 .fish-info
-	padding-top: 93px
+	padding-top: 87px
 
 	h2
-		margin-bottom: 96px
+		margin-bottom: 81px
 
 	&__table
 		height: 950px
@@ -238,18 +238,65 @@
 
 		&-head
 			border-bottom: 1px solid #d2d2d2
+			min-height: 82px
+			align-items: center
+			justify-content: flex-start
+			padding-bottom: 12px
+
+
+		&-head h3
+			font-size: 24px
+			font-weight: bold
+
+		&-head span
+			margin-left: 14px
+			margin-right: 7px
+			padding-left: 40px
+			position: relative
+			font-size: 18px
+			color: #444444
+
+		&-head span:last-of-type
+			margin-right: 0px
+
+		&-head span::before
+			content: "";
+			display: block
+			position: absolute
+			height: 31px
+			width: 31px
+			background-repeat: no-repeat
+			left: 0
+			top: -15%
+
+		&-head span:first-of-type::before
+			background-image: url(../images/fish-info-ruler.png)
+
+		&-head span:last-of-type::before
+			background-image: url(../images/fish-info-weights.png)
 
 	&__recipe
 		
 		width: 301px
 		padding-left: 30px
-		padding-right: 30px
+		
 		
 		&-head
 			border-bottom: 1px solid #d2d2d2
 			min-height: 75px
 			align-items: center
+			position: relative
 			
+		&-head::before
+			content: ""
+			display: block
+			position: absolute
+			height: 33px
+			width: 33px
+			background-image: url(../images/fish-info-cook-hat.png)
+			left: 0
+			top: 0
+			transform: translateY(50%)
 
 		&-head p 
 			font-size: 14px
@@ -259,16 +306,30 @@
 			position: relative
 
 
-		&-head p::before
-			content: ""
-			display: block
-			position: absolute
-			height: 33px
-			width: 33px
-			background-image: url(../images/fish-info-cook-hat.png)
-			left: 0
-			top: 0
-			transform: translateY(-34%)
+		
+		&-body 
+			padding-top: 56px	
+		
+		&-body img
+			border-radius: 5px
+		&-body p 
+			font-size: 18px
+			line-height: 26px
+			color: #444444
+
+	&--hidden &__recipe-head p
+		bottom: -73px
+		left: -46px
+
+	&--hidden &__food
+		display: none 
+
+	&--hidden &__full
+		display: none
+
+
+
+
 	&__btn
 		background-color: #e86f25
 		border: none
