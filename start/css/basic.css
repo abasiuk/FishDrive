@@ -573,7 +573,8 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-position: 0% 29%;
     -webkit-background-size: 49% 49%;
-            background-size: 49%; }
+            background-size: 49%;
+    color: red; }
     .poll__do b {
       color: #fff;
       font-weight: 400; }

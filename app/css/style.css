@@ -759,6 +759,7 @@ h6 {
   background-position: 0% 29%;
   -webkit-background-size: 49% 49%;
   background-size: 49%;
+  color: red;
 }
 
 .poll__do b {
