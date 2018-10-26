@@ -1,17 +1,15 @@
 /* poll */
 
 .poll 
-	padding-top: 148px
+	padding-top: 151px
 	padding-bottom: 89px
 
 	h2 
 		width: 70%
 		margin: 0 auto
 		margin-bottom: 31px
-		font-size: 40px
-		line-height: 44px
-		color: #000
-		font-weight: 900
+		
+		
 	&__par 
 		font-size: 24px
 		line-height: 26px
@@ -20,10 +18,12 @@
 	&__stat 
 		justify-content: flex-start
 		margin-top: 5px
+		margin-bottom: 55px
 	&__left,
 	&__right
 		width: 50%
 		justify-content: flex-start
+		overflow: hidden
 	&__right
 		padding-left: 10px
 	&__percent b 
@@ -38,7 +38,7 @@
 			content: ""
 			display: block
 			position: absolute
-			background-color: rgba(255, 255, 255, 0.3)
+			background-color: rgba(255, 255, 255, 0.45)
 			top: 0
 			left: 0
 			width: 100%
@@ -51,17 +51,45 @@
 			content: ""
 			display: block
 			position: absolute
-			background-color: rgba(255, 255, 255, 0.3)
+			background-color: rgba(255, 255, 255, 0.45)
 			top: 0
 			left: 0
 			width: 100%
 			height: 36%
 	
+	
+	&__right &__man
+		padding-left: 10px
+
+	&__man 
+		font-size: 0
+		margin-top: 8px
+
 	&__man span
 		display: inline-block
-		height: 20px
-		width: 20px
+		height: 32px
+		width: 13px
+		margin-right: 15.5px
+		
+		background-repeat: no-repeat
+
+	&__man span:last-child 
+		margin-right: 0
+
+	&__left &__man span
 		background-image: url(../images/poll-man-red.png)
+
+	&__left &__man span:nth-last-child(-n+3)
+			background-image: url(../images/poll-man-green.png)
+
+	&__right &__man span
+		background-image: url(../images/poll-man-green.png)
+	
+	&__right &__man span:last-child
+		background-image: url(../images/poll-man-red.png)
+
+	
+
 
 	&__say,
 	&__do 
@@ -73,21 +101,193 @@
 	&__say
 		margin-left: 24px
 		max-width: 220px
-		background-image: url(../images/poll-say.png)
-		background-repeat: no-repeat
-		background-position: 42% 29%
-		background-size: 75%
+		
 		b
+			display: inline-block
 			color: #fff
+			padding: 3px 12px
+			padding-top: 0
+			margin-left: -10px
+			// background-color: #e46e26
 			font-weight: 400
+			background-image: url(../images/poll-say.png)
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+		span
+			display: inline-block
+			width: 100%
+
 
 	&__do
 		margin-left: 0
 		padding-left: 18px
-		background-image: url(../images/poll-do.png)
-		background-repeat: no-repeat
-		background-position: 0% 29%;
-		background-size: 49%
+		
+		
 		b
+			display: inline-block
 			color: #fff
+			padding: 3px 12px
+			padding-top: 0
+			margin-left: -10px
+			// background-color: #e46e26
 			font-weight: 400
+			background-image: url(../images/poll-do.png)
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain 
+
+	&__note
+		padding: 22px
+		border: 2px solid #d7e17d
+		position: relative
+
+		&::before
+			content: ""
+			display: block
+			position: absolute
+			height: 0px
+			width: 0px
+			background-color: transparent
+			border: 18px solid transparent
+			border-bottom: 14px solid #d7e17d
+			left: 50%
+			top: 0
+			transform:  translateX(-50%) translateY(-100%)  
+
+		&::after
+			content: ""
+			display: block
+			position: absolute
+			height: 0px
+			width: 0px
+			background-color: transparent
+			border: 14px solid transparent
+			border-bottom: 11px solid #fff
+			left: 50%
+			top: 0
+			transform:  translateX(-50%) translateY(-100%)  
+
+
+	&__note p 
+		width: 90%
+		margin: 0 auto
+		text-align: center
+		font-size: 20px
+		line-height: 30px
+		font-weight: 400
+		
+
+	&__note i 
+		color: #555555
+
+
+/*fish-info*/
+
+#ascrail2000
+	left: 84.5%!important
+
+#ascrail2000::before 
+	content: ""
+	display: block
+	position: absolute
+	top: 0
+	left: 50%
+	height: 100%
+	width: 3px
+	background-color: #f1efef
+
+
+
+
+
+
+#ascrail2000 div::before 
+	content: ""
+	display: block
+	position: absolute
+	top: 50%
+	left: 2px
+	width: 5px
+	height: 2px
+	transform: translateY(-50%)
+	background-color: #fff
+	box-shadow: 0 3px #fff,
+	0 6px #fff
+
+.fish-info
+	padding-top: 93px
+
+	h2
+		margin-bottom: 96px
+
+	&__table
+		height: 950px
+
+	&__img
+		width: 471px
+
+		img
+			max-width: 470px
+
+
+	&__descr
+		width: 371px
+		margin-left: 31px
+		
+
+		&-head
+			border-bottom: 1px solid #d2d2d2
+
+	&__recipe
+		
+		width: 301px
+		padding-left: 30px
+		padding-right: 30px
+		
+		&-head
+			border-bottom: 1px solid #d2d2d2
+			min-height: 75px
+			align-items: center
+			
+
+		&-head p 
+			font-size: 14px
+			padding-left: 45px
+			line-height: 18px
+			color: #666666
+			position: relative
+
+
+		&-head p::before
+			content: ""
+			display: block
+			position: absolute
+			height: 33px
+			width: 33px
+			background-image: url(../images/fish-info-cook-hat.png)
+			left: 0
+			top: 0
+			transform: translateY(-34%)
+	&__btn
+		background-color: #e86f25
+		border: none
+		height: 24px
+		width: 24px
+		border-radius: 50%
+		cursor: pointer
+		font-size: 0
+		position: relative
+
+	&__btn::before
+		content: "+"
+		display: block
+		position: absolute
+		left: 31%
+		top: 10%
+		color: #fff
+		font-size: 18px
+		font-weight: 400
+
+
+

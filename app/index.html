@@ -98,9 +98,9 @@
 	</header>
 	<!-- /.main-head -->
 	<main>
-		<section class="poll" style="height: 765px; border-top: 1px solid red">
+		<section class="poll" style="/*height: 765px;*/ border-top: 1px solid red">
 			<div class="container">
-				<h2>“Я и без приманок прекрасно ловлю”,<br>– <i>хвастаются рыбаки</i></h2>
+				<h2 class="second-title">“Я и без приманок прекрасно ловлю”,<br>– <i class="second-title__itallic">хвастаются рыбаки</i></h2>
 				<p class="poll__par">Но вот незадача: <br> по результатам анонимного опроса среди 2400 рыбаков</p>
 				<div class="poll__stat flex">
 					<div class="poll__left flex">
@@ -119,7 +119,7 @@
 								<span></span>
 							</div>
 						</div>
-						<p class="poll__say">говорят, <br>что  <b>не используют</b> приманку</p>
+						<p class="poll__say"><span>говорят,</span> что  <b>не используют</b> приманку</p>
 					</div>
 					<div class="poll__right flex">
 						<div class="poll__percent">
@@ -141,7 +141,7 @@
 					</div>
 				</div>
 				<div class="poll__note">
-					<p><b>Как есть на самом деле:</b> <i>Все приманивают, но молчат. Конкуренция огромная. Так вот, 95% везения на крупняк – это хорошая приманка.</i></p>
+					<p><b>Как есть на самом деле:</b> <i>Все приманивают, но молчат. Конкуренция огромная. Так вот, 95% везения на&nbsp;крупняк – это хорошая приманка.</i></p>
 				</div>
 			</div>
 		</section>
@@ -176,7 +176,161 @@
 		</section>
 		<!-- /.action -->
 		<section class="fish-info" style="height: 1240px; border-top: 1px solid red">
-			<div class="container"></div>
+			<div class="container">
+				<h2 class="second-title">С <span class="second-title_green">Fish Drive</span> вы поймаете <span class="second-title_orange">свою самую крупную рыбу</span></h2>
+				<div class="fish-info__table">
+					<div class="fish-info__row flex">
+						<div class="fish-info__img">
+							<img src="./images/fish-info-img-1.png">
+						</div>
+						<div class="fish-info__descr">
+							<div class="fish-info__descr-head">
+								<h3>Язь</h3>
+								<span>от 35 см</span>
+								<span>2,5 кг</span>
+							</div>
+							<div class="fish-info__descr-body">
+								<p><small>Основные приманивающие ингредиенты Fish Drive:</small> кора ивы, концентрированные семена кукурузы, анис </p>
+							</div>
+						</div>
+						<div class="fish-info__recipe ">
+							<div class="fish-info__recipe-head flex">
+								<p>Рецепт</p>
+								<button class="fish-info__btn">Показать больше</button>
+							</div>
+							<div class="fish-info__recipe-body">
+								<img src="./images/fish-info-recipe-1.jpg">
+								<p>Сделайте уху или нашпигуйте чесноком и запеките. А под пиво чудно идет вяленый балычок из язя.</p>
+							</div>
+						</div>
+					</div>
+					<div class="fish-info__row flex">
+						<div class="fish-info__img">
+							<img src="./images/fish-info-img-2.png">
+						</div>
+						<div class="fish-info__descr">
+							<div class="fish-info__descr-head">
+								<h3>Карп</h3>
+								<span>от 39 см</span>
+								<span>2,5 кг</span>
+							</div>
+							<div class="fish-info__descr-body">
+								<p><small>Основные приманивающие ингредиенты Fish Drive:</small> мумие, корень одуванчика, фасоль</p>
+							</div>
+						</div>
+						<div class="fish-info__recipe">
+							<div class="fish-info__recipe-head flex">
+								<p>Рецепт</p>
+								<button class="fish-info__btn">Показать больше</button>
+							</div>
+							<div class="fish-info__recipe-body">
+								<img src="./images/fish-info-recipe-2.jpg">
+								<p>Запеките в сметане или с фаршем. Еще карп великолепен с грецкими орехами, гвоздикой и корицей.</p>
+							</div>
+						</div>
+					</div>
+					<div class="fish-info__row flex">
+						<div class="fish-info__img">
+							<img src="./images/fish-info-img-3.png">
+						</div>
+						<div class="fish-info__descr">
+							<div class="fish-info__descr-head">
+								<h3>Лещ</h3>
+								<span>от 40 см</span>
+								<span>2,8 кг</span>
+							</div>
+							<div class="fish-info__descr-body">
+								<p><small>Основные приманивающие ингредиенты Fish Drive:</small> анис, медуница, папоротник</p>
+							</div>
+						</div>
+						<div class="fish-info__recipe">
+							<div class="fish-info__recipe-head flex">
+								<p>Рецепт</p>
+								<button class="fish-info__btn">Показать больше</button>
+							</div>
+							<div class="fish-info__recipe-body">
+								<img src="./images/fish-info-recipe-3.jpg">
+								<p>Запекайте с чем угодно: с картошкой, морковью и помидорами, в сметане. К нему идет любой маринад, а мясо леща получается сочным и ароматным.</p>
+							</div>
+						</div>
+					</div>
+					<div class="fish-info__row flex">
+						<div class="fish-info__img">
+							<img src="./images/fish-info-img-4.png">
+						</div>
+						<div class="fish-info__descr">
+							<div class="fish-info__descr-head">
+								<h3>Белый амур</h3>
+								<span>от 45 см</span>
+								<span>2,2 кг</span>
+							</div>
+							<div class="fish-info__descr-body">
+								<p><small>Основные приманивающие ингредиенты Fish Drive:</small> концентрированные семена кукурузы, анис, корень одуванчика</p>
+							</div>
+						</div>
+						<div class="fish-info__recipe">
+							<div class="fish-info__recipe-head flex">
+								<p>Рецепт</p>
+								<button class="fish-info__btn">Показать больше</button>
+							</div>
+							<div class="fish-info__recipe-body">
+								<img src="./images/fish-info-recipe-4.jpg">
+								<p>У белого амура отличное белое мясо и мало костей – из него получатся вкусные биточки. Амура можно пожарить, запечь. А если будете делать уху – обязательно добавьте в нее 50 г водки.</p>
+							</div>
+						</div>
+					</div>
+					<div class="fish-info__row flex">
+						<div class="fish-info__img">
+							<img src="./images/fish-info-img-5.png">
+						</div>
+						<div class="fish-info__descr">
+							<div class="fish-info__descr-head">
+								<h3>Судак</h3>
+								<span>от 46 см</span>
+								<span>3,5 кг</span>
+							</div>
+							<div class="fish-info__descr-body">
+								<p><small>Основные приманивающие ингредиенты Fish Drive:</small> панты и кровь марала, огневка пчелиная, перга</p>
+							</div>
+						</div>
+						<div class="fish-info__recipe">
+							<div class="fish-info__recipe-head flex">
+								<p>Рецепт</p>
+								<button class="fish-info__btn">Показать больше</button>
+							</div>
+							<div class="fish-info__recipe-body">
+								<img src="./images/fish-info-recipe-5.jpg">
+								<p>Из этого диетического мяса получаются настоящие шедевры. Начиная от запекания его на углях с зеленью и сливочным маслом до ризотто с судаком.</p>
+							</div>
+						</div>
+					</div>
+					<div class="fish-info__row flex">
+						<div class="fish-info__img">
+							<img src="./images/fish-info-img-6.png">
+						</div>
+						<div class="fish-info__descr">
+							<div class="fish-info__descr-head">
+								<h3>Сом</h3>
+								<span>от 80 см</span>
+								<span>5 кг</span>
+							</div>
+							<div class="fish-info__descr-body">
+								<p><small>Основные приманивающие ингредиенты Fish Drive:</small> панты и кровь марала, огневка пчелиная, перга</p>
+							</div>
+						</div>
+						<div class="fish-info__recipe">
+							<div class="fish-info__recipe-head flex">
+								<p>Рецепт</p>
+								<button class="fish-info__btn">Показать больше</button>
+							</div>
+							<div class="fish-info__recipe-body">
+								<img src="./images/fish-info-recipe-6.jpg">
+								<p>Чистить сома по сравнению с другими рыбами – одно удовольствие. Маринуйте его с лимоном или в белом сухом вине. А запеченного трофейного сома с таким же вином можно и употребить.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<!-- /.fish-info -->
 		<section class="how-use" style="height: 932px; border-top: 1px solid red">
@@ -217,5 +371,6 @@
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="pixelScreen.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/jquery.nicescroll.js"></script>
 </body>
 </html>
