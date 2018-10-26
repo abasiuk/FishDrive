@@ -1,0 +1,93 @@
+/* poll */
+
+.poll 
+	padding-top: 148px
+	padding-bottom: 89px
+
+	h2 
+		width: 70%
+		margin: 0 auto
+		margin-bottom: 31px
+		font-size: 40px
+		line-height: 44px
+		color: #000
+		font-weight: 900
+	&__par 
+		font-size: 24px
+		line-height: 26px
+		text-align: center
+		font-weight: 500
+	&__stat 
+		justify-content: flex-start
+		margin-top: 5px
+	&__left,
+	&__right
+		width: 50%
+		justify-content: flex-start
+	&__right
+		padding-left: 10px
+	&__percent b 
+		font-size: 150px
+		line-height: 150px
+		font-weight: 900
+		position: relative
+	&__left &__percent b 
+		color: #e46d25
+
+		&::before
+			content: ""
+			display: block
+			position: absolute
+			background-color: rgba(255, 255, 255, 0.3)
+			top: 0
+			left: 0
+			width: 100%
+			height: 46%
+
+	&__right &__percent b 
+		color: #bdc877
+
+		&::before
+			content: ""
+			display: block
+			position: absolute
+			background-color: rgba(255, 255, 255, 0.3)
+			top: 0
+			left: 0
+			width: 100%
+			height: 36%
+	
+	&__man span
+		display: inline-block
+		height: 20px
+		width: 20px
+		background-image: url(../images/poll-man-red.png)
+
+	&__say,
+	&__do 
+		margin-top: 36px
+		margin-left: 31px
+		font-size: 20px
+		line-height: 24px
+	
+	&__say
+		margin-left: 24px
+		max-width: 220px
+		background-image: url(../images/poll-say.png)
+		background-repeat: no-repeat
+		background-position: 42% 29%
+		background-size: 75%
+		b
+			color: #fff
+			font-weight: 400
+
+	&__do
+		margin-left: 0
+		padding-left: 18px
+		background-image: url(../images/poll-do.png)
+		background-repeat: no-repeat
+		background-position: 0% 29%;
+		background-size: 49%
+		b
+			color: #fff
+			font-weight: 400

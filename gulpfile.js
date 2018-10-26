@@ -33,7 +33,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('css', function () {
-  return gulp.src('start/css/*.sass')
+  return gulp.src('start/css/basic.sass')
     .pipe(plumber({
                 errorHandler: notify.onError(function(err){
                     return {
@@ -49,14 +49,14 @@ gulp.task('css', function () {
 });
 
 gulp.task('allcss', function () {
-    gulp.src(['start/css/style.css', 'start/css/media.css'])
+    gulp.src(['start/css/*.css'])
     .pipe(concatCss("style.css"))
     .pipe(gulp.dest('app/css'))
     .pipe(connect.reload());
 });
 
 gulp.task('allcss2', function () {
-    gulp.src(['start/css/*.css', '!start/css/style.css', '!start/css/media.css'])
+    gulp.src(['start/css/libs/*.css'])
     .pipe(plumber({
                 errorHandler: notify.onError(function(err){
                     return {
