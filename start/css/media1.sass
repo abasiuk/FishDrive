@@ -41,7 +41,28 @@
 		align-items: flex-start
 		&__big, &__desc
 			margin: 0
-		
+	.total-desc, .prod-description
+		width: 600px
+		margin-left: 400px
+	.prod-description
+		&__item
+			&:before
+				top: -10px
+			&:nth-child(1)
+
+			&:nth-child(2)
+				&:after
+					top: -18px
+			&:nth-child(3)
+				&:after
+					right: calc(100% - 82px)
+	.fish-vertical
+		left: 0
+	.action
+		padding: 40px 0
+	.second-title
+		position: relative
+		z-index: 1
 @media all and (max-width: 1024px)
 	.container
 		width: 767px
@@ -58,7 +79,17 @@
 		margin: 0 auto
 	.form
 		margin-top: 70px
-
+	.fish-vertical
+		display: none
+	.total-desc, .prod-description
+		width: 100%
+		margin-left: 0
+	.prod-description
+		&__item
+			&:after
+				display: none
+			&:before
+				display: none
 @media all and (max-width: 768px)
 	.container	
 		width: 479px
@@ -87,6 +118,23 @@
 		margin-top: 20px
 	.wrap-form
 		margin-bottom: 15px
+	.prod-description
+		&__title
+			font-size: 18px
+			&:after
+				border-bottom-width: 36px
+			&:before
+				border-top-width: 36px
+		&__desc
+			font-size: 16px
+		&__item
+			text-align: center
+	.total-desc
+		font-size: 18px
+		text-align: center
+		&:after
+			right: 0
+			margin: 0 auto
 @media all and (max-width: 480px)
 	.container	
 		width: 320px

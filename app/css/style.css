@@ -672,6 +672,10 @@ h6 {
 
 .action {
   padding: 87px 0;
+  background: url("../images/cane.png") -webkit-calc(100% + 200px) bottom no-repeat, url("../images/main-bg.png") center no-repeat;
+  background: url("../images/cane.png") calc(100% + 200px) bottom no-repeat, url("../images/main-bg.png") center no-repeat;
+  -webkit-background-size: auto, cover;
+  background-size: auto, cover;
 }
 
 .prod-description {
@@ -754,6 +758,7 @@ h6 {
   padding: 9px;
   position: relative;
   margin-left: 15px;
+  margin-right: 15px;
   margin-bottom: 20px;
   z-index: 1;
 }
@@ -816,6 +821,10 @@ h6 {
   position: absolute;
   top: -97px;
   left: -58px;
+}
+
+.fish-vertical__pic {
+  width: 301px;
 }
 
 .fish-vertical__marker {
@@ -1277,6 +1286,38 @@ h6 {
   .main-title__desc {
     margin: 0;
   }
+
+  .total-desc,
+  .prod-description {
+    width: 600px;
+    margin-left: 400px;
+  }
+
+  .prod-description__item:before {
+    top: -10px;
+  }
+
+  .prod-description__item:nth-child(2):after {
+    top: -18px;
+  }
+
+  .prod-description__item:nth-child(3):after {
+    right: -webkit-calc(100% - 82px);
+    right: calc(100% - 82px);
+  }
+
+  .fish-vertical {
+    left: 0;
+  }
+
+  .action {
+    padding: 40px 0;
+  }
+
+  .second-title {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 @media all and (max-width: 1024px) {
@@ -1311,6 +1352,24 @@ h6 {
 
   .form {
     margin-top: 70px;
+  }
+
+  .fish-vertical {
+    display: none;
+  }
+
+  .total-desc,
+  .prod-description {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .prod-description__item:after {
+    display: none;
+  }
+
+  .prod-description__item:before {
+    display: none;
   }
 }
 
@@ -1370,6 +1429,36 @@ h6 {
 
   .wrap-form {
     margin-bottom: 15px;
+  }
+
+  .prod-description__title {
+    font-size: 18px;
+  }
+
+  .prod-description__title:after {
+    border-bottom-width: 36px;
+  }
+
+  .prod-description__title:before {
+    border-top-width: 36px;
+  }
+
+  .prod-description__desc {
+    font-size: 16px;
+  }
+
+  .prod-description__item {
+    text-align: center;
+  }
+
+  .total-desc {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .total-desc:after {
+    right: 0;
+    margin: 0 auto;
   }
 }
 
