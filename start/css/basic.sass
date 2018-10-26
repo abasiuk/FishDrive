@@ -58,8 +58,26 @@ p
 h1, h2, h3, h4, h5, h6
 	@extend .headers
 	margin: 0
+.second-title
+	font-size: 40px
+	font-weight: 900
+	line-height: 1.1
+	color: #000
+	&_green
+		color: #284731
+	&_orange
+		color: #e86f25
+	&_itallic
+		font-style: italic
+		font-weight: 500
+@media all and (max-width: 768px)
+	.second-title
+		font-size: 32px
 
 @import "style1.sass"
+
 @import "style2.sass"
+
 @import "media1.sass"
+
 @import "media2.sass"

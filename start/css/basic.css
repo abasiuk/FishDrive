@@ -72,12 +72,31 @@ p {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
-/*header*/
-.main-head {
-  padding-top: 25px;
+.second-title {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #000; }
+  .second-title_green {
+    color: #284731; }
+  .second-title_orange {
+    color: #e86f25; }
+  .second-title_itallic {
+    font-style: italic;
+    font-weight: 500; }
+
+@media all and (max-width: 768px) {
+  .second-title {
+    font-size: 32px; } }
+
+.bg-dark {
   background: url(../images/main-bg.png) center no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
+
+/*header*/
+.main-head {
+  padding-top: 25px; }
 
 .top-line {
   display: -webkit-flex;
@@ -486,6 +505,136 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     bottom: 0;
     margin: auto; }
+
+/* action section */
+.action {
+  padding: 87px 0; }
+
+.prod-description {
+  width: 760px;
+  max-width: 100%;
+  margin-top: 39px;
+  margin-left: 355px; }
+  .prod-description__item {
+    margin-bottom: 34px;
+    position: relative; }
+    .prod-description__item:after, .prod-description__item:before {
+      content: '';
+      position: absolute;
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .prod-description__item:before {
+      width: 45px;
+      height: 45px;
+      left: -75px;
+      top: -1px;
+      z-index: 2; }
+    .prod-description__item:after {
+      z-index: 0; }
+    .prod-description__item:nth-child(1):after {
+      width: 320px;
+      height: 14px;
+      background: url(../images/fish-arrow-1.png) center no-repeat;
+      top: 5px;
+      right: -webkit-calc(100% - 80px);
+      right: calc(100% - 80px); }
+    .prod-description__item:nth-child(1):before {
+      background: #f5f8f3 url(../images/fish-icon-5.png) center no-repeat; }
+    .prod-description__item:nth-child(2):after {
+      width: 343px;
+      height: 32px;
+      background: url(../images/fish-arrow-2.png) center no-repeat;
+      top: -14px;
+      right: -webkit-calc(100% - 80px);
+      right: calc(100% - 80px); }
+    .prod-description__item:nth-child(2):before {
+      background: #f5f8f3 url(../images/fish-icon-6.png) center no-repeat; }
+    .prod-description__item:nth-child(3):after {
+      width: 343px;
+      height: 14px;
+      background: url(../images/fish-arrow-3.png) center no-repeat;
+      top: 9px;
+      right: -webkit-calc(100% - 87px);
+      right: calc(100% - 87px); }
+    .prod-description__item:nth-child(3):before {
+      background: #f5f8f3 url(../images/fish-icon-7.png) center no-repeat; }
+  .prod-description__title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1;
+    background-color: #e86f25;
+    padding: 9px;
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    z-index: 1; }
+    .prod-description__title:after, .prod-description__title:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0; }
+    .prod-description__title:after {
+      top: 0;
+      right: -15px;
+      border-top: 0px solid transparent;
+      border-left: 15px solid #e86f25;
+      border-bottom: 40px solid transparent; }
+    .prod-description__title:before {
+      top: 0;
+      left: -15px;
+      border-bottom: 0px solid transparent;
+      border-right: 15px solid #e86f25;
+      border-top: 40px solid transparent; }
+  .prod-description__desc {
+    font-size: 18px;
+    line-height: 1.35;
+    color: #444; }
+
+/* total description */
+.total-desc {
+  width: 760px;
+  line-height: 1.18;
+  font-style: italic;
+  margin-left: 355px;
+  font-size: 22px;
+  padding-top: 29px;
+  position: relative; }
+  .total-desc:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    left: 0;
+    top: 0; }
+
+/* fish vertical block */
+.fish-vertical {
+  position: absolute;
+  top: -97px;
+  left: -58px; }
+  .fish-vertical__marker {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #d7e17d;
+    -webkit-box-shadow: 0 0 0 7px rgba(232, 111, 37, 0.5);
+            box-shadow: 0 0 0 7px rgba(232, 111, 37, 0.5);
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+    .fish-vertical__marker:nth-of-type(1) {
+      top: 232px;
+      left: 22px; }
+    .fish-vertical__marker:nth-of-type(2) {
+      top: 358px;
+      right: 15px; }
+    .fish-vertical__marker:nth-of-type(3) {
+      top: 550px;
+      right: 15px; }
 
 /* poll */
 .poll {
