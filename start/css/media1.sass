@@ -3,6 +3,9 @@
 	.form
 		&:after
 			display: none
+	.action
+		background: url("../images/main-bg.png") center no-repeat
+		background-size: cover
 @media all and (max-width: 1285px)
 	.main-product__pic
 		right: -140px
@@ -63,6 +66,23 @@
 	.second-title
 		position: relative
 		z-index: 1
+	.how-use
+		&__item
+			padding: 0 10px
+	.champion
+		&__pic
+			width: 500px
+	.video
+		&__item
+			width: 330px
+	.top-line
+		&_last
+			display: none
+	.main-head
+		&_bottom
+			padding-top: 70px
+	.main-footer
+		padding-top: 60px
 @media all and (max-width: 1024px)
 	.container
 		width: 767px
@@ -90,6 +110,63 @@
 				display: none
 			&:before
 				display: none
+	.how-use
+		&-block
+			height: auto
+			flex-wrap: wrap
+			justify-content: space-around
+		&__item
+			width: 240px
+			padding: 0
+			margin-bottom: 30px
+			&:first-child, &:last-child
+				align-self: flex-start
+				width: 240px
+				&:before
+					left: 27px
+		&__pic
+			width: 220px
+			height: 220px
+	.champion
+		flex-direction: column
+		&__header
+			margin-right: 0
+		&__content
+			padding-top: 30px
+			&:after, &:before
+				display: none
+		&__pic
+			max-width: 100%
+	.video
+		flex-wrap: wrap
+		justify-content: space-around
+		&__item
+			margin-bottom: 30px
+			max-width: 100%
+	.main-head
+		&_bottom
+			padding-top: 40px
+	.popup
+		width: 320px
+		padding: 10px
+		flex-direction: column
+		&__form
+			padding: 0
+	.logo, .sequrity
+		&_popup
+			display: none
+	.form
+		&_popup
+			margin-left: auto
+			margin-right: auto
+	.product-cane
+		&_popup
+			background: none
+			margin-top: 0
+			padding-top: 0
+			.product-cane
+				&__pic
+					margin-top: 0
 @media all and (max-width: 768px)
 	.container	
 		width: 479px
@@ -135,6 +212,61 @@
 		&:after
 			right: 0
 			margin: 0 auto
+	.how-use
+		&-block
+			justify-content: space-between
+		&__item
+			width: 220px
+			&:first-child, &:last-child
+				width: 220px
+	.product-cane
+		margin-top: 0
+	.champion
+		&__name
+			text-align: center
+		&__post
+			padding-left: 0
+			text-align: center
+			padding-top: 50px
+			&:before
+				left: 0
+				right: 0
+				top: 10px
+				bottom: auto
+	.footer__address, .footer__code, .footer__name
+		display: none	
+	.main-footer .container
+		flex-wrap: wrap
+		flex-direction: column
+	.footer__company
+		justify-content: center
+		margin-bottom: 10px	
+	.footer__logo
+		margin-right: 0
+	.main-footer
+		padding: 20px 0
 @media all and (max-width: 480px)
 	.container	
 		width: 320px
+	.how-use
+		&-block
+			justify-content: center
+		&__item
+			width: 270px
+			&:first-child, &:last-child
+				width: 270px
+			&:last-child
+				margin-bottom: 0
+	.product-cane
+		padding-top: 0
+		background: none
+		margin-bottom: 0
+		&__pic
+			margin-top: 0
+	.sale
+		&_right
+			top: 0
+			right: 0
+	.btn_pack
+		width: 100%
+		bottom: -30px

@@ -15,4 +15,14 @@ window.addEventListener("DOMContentLoaded", function() {
 		});
 	});
 
+	$('.review-block').slick({
+		dots: true,
+		infinite: true,
+		slidesToShow: 3,
+		arrows: true,
+		speed: 500,
+		variableWidth: true,
+		centerMode: true
+	});
+
 });

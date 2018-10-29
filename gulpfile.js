@@ -105,7 +105,7 @@ gulp.task('js', function () {
 
 gulp.task('watch', function () {
 	gulp.watch('start/css/*.sass', ['css'])
-	gulp.watch('start/css/*.css', ['allcss', 'allcss2'])
+	gulp.watch('start/css/**/*.css', ['allcss', 'allcss2'])
 	gulp.watch('start/index.html', ['html'])
 	gulp.watch('start/js/*.js', ['js'])
     gulp.watch('start/images/**/*.*', ['image'])
