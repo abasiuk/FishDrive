@@ -15,4 +15,19 @@ window.addEventListener("DOMContentLoaded", function() {
 		});
 	});
 
+	var fishInfoBtn = document.querySelectorAll(".fish-info__btn");
+
+	fishInfoBtn.forEach.call( fishInfoBtn, function (item) {
+		item.addEventListener('click', function() {
+			this.parentNode.parentNode.classList.toggle("fish-info--show")
+		});
+
+	});
+
+	
+
+
+
+
+
 });
