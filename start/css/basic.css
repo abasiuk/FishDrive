@@ -830,9 +830,9 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 3px #fff, 0 6px #fff; }
 
 .fish-info {
-  padding-top: 93px; }
+  padding-top: 87px; }
   .fish-info h2 {
-    margin-bottom: 96px; }
+    margin-bottom: 81px; }
   .fish-info__table {
     height: 950px; }
   .fish-info__img {
@@ -843,25 +843,54 @@ h1, h2, h3, h4, h5, h6 {
     width: 371px;
     margin-left: 31px; }
     .fish-info__descr-head {
-      border-bottom: 1px solid #d2d2d2; }
+      border-bottom: 1px solid #d2d2d2;
+      min-height: 82px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      padding-bottom: 12px; }
+    .fish-info__descr-head h3 {
+      font-size: 24px;
+      font-weight: bold; }
+    .fish-info__descr-head span {
+      margin-left: 14px;
+      margin-right: 7px;
+      padding-left: 40px;
+      position: relative;
+      font-size: 18px;
+      color: #444444; }
+    .fish-info__descr-head span:last-of-type {
+      margin-right: 0px; }
+    .fish-info__descr-head span::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 31px;
+      width: 31px;
+      background-repeat: no-repeat;
+      left: 0;
+      top: -15%; }
+    .fish-info__descr-head span:first-of-type::before {
+      background-image: url(../images/fish-info-ruler.png); }
+    .fish-info__descr-head span:last-of-type::before {
+      background-image: url(../images/fish-info-weights.png); }
   .fish-info__recipe {
     width: 301px;
-    padding-left: 30px;
-    padding-right: 30px; }
+    padding-left: 30px; }
     .fish-info__recipe-head {
       border-bottom: 1px solid #d2d2d2;
       min-height: 75px;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; }
-    .fish-info__recipe-head p {
-      font-size: 14px;
-      padding-left: 45px;
-      line-height: 18px;
-      color: #666666;
+              align-items: center;
       position: relative; }
-    .fish-info__recipe-head p::before {
+    .fish-info__recipe-head::before {
       content: "";
       display: block;
       position: absolute;
@@ -870,9 +899,31 @@ h1, h2, h3, h4, h5, h6 {
       background-image: url(../images/fish-info-cook-hat.png);
       left: 0;
       top: 0;
-      -webkit-transform: translateY(-34%);
-          -ms-transform: translateY(-34%);
-              transform: translateY(-34%); }
+      -webkit-transform: translateY(50%);
+          -ms-transform: translateY(50%);
+              transform: translateY(50%); }
+    .fish-info__recipe-head p {
+      font-size: 14px;
+      padding-left: 45px;
+      line-height: 18px;
+      color: #666666;
+      position: relative; }
+    .fish-info__recipe-body {
+      padding-top: 56px; }
+    .fish-info__recipe-body img {
+      -webkit-border-radius: 5px;
+              border-radius: 5px; }
+    .fish-info__recipe-body p {
+      font-size: 18px;
+      line-height: 26px;
+      color: #444444; }
+  .fish-info--hidden .fish-info__recipe-head p {
+    bottom: -73px;
+    left: -46px; }
+  .fish-info--hidden .fish-info__food {
+    display: none; }
+  .fish-info--hidden .fish-info__full {
+    display: none; }
   .fish-info__btn {
     background-color: #e86f25;
     border: none;
@@ -1109,7 +1160,9 @@ h1, h2, h3, h4, h5, h6 {
     .poll__man span {
       margin-right: 7.5px; }
   .poll__say, .poll__do {
-    margin-top: 22px; }
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 24px; }
   .poll__note p {
     width: 100%; } }
 
