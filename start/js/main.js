@@ -35,4 +35,14 @@ window.addEventListener("DOMContentLoaded", function() {
 		centerMode: true
 	});
 
+	$('.adaptiv-table__slick').slick({
+		dots: true,
+		slidesToShow: 1
+		
+		
+		
+	});
+
+	
+
 });

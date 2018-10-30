@@ -15,6 +15,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		});
 	});
 
+  
 	var fishInfoBtn = document.querySelectorAll(".fish-info__btn");
 
 	fishInfoBtn.forEach.call( fishInfoBtn, function (item) {
@@ -34,5 +35,14 @@ window.addEventListener("DOMContentLoaded", function() {
 		centerMode: true
 	});
 
-});
+	$('.adaptiv-table__slick').slick({
+		dots: true,
+		slidesToShow: 1
+		
+		
+		
+	});
 
+	
+
+});
