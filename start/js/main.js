@@ -42,6 +42,32 @@ window.addEventListener("DOMContentLoaded", function() {
 		  ]
 	});
 
+
+	/* ban to input letters in phone box */
+	String.prototype.removeSpaces = function() {
+        return this.replace(/[^\d/]+/g, '');
+	}
+	document.querySelector("#add-review__phone").addEventListener("input", function(event) { this.value = this.value.removeSpaces(); });
+
+	/* add review button */
+	var addReview = document.querySelector("#add-review__btn");
+	console.log(addReview);
+
+	addReview.addEventListener('click', function () {
+		
+		const addName = document.querySelector("#add-review__name");
+		const addPhone = document.querySelector("#add-review__phone");
+		const addReview = document.querySelector("#add-review__review");
+		const addForm = document.querySelector("#add-review__form");
+
+		if (addName.value.trim().length > 2 && addPhone.value.trim().length > 10 && addReview.value.trim().length > 10){
+
+			addForm.innerHTML = "<p class='add-review__desc add-review__desc_answer'>Спасибо за отклик, ваш отзыв на модерации.</p>"
+			addForm.classList.add("add-review__bottom-indent");
+		}
+
+	});
+
 	/* more btn */
 	var allbtn = document.querySelectorAll(".review__more");
 

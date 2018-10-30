@@ -486,6 +486,10 @@ h6 {
   width: 100%;
 }
 
+.default-input__input_fix-width {
+  width: 260px;
+}
+
 .default-input_big {
   width: 550px;
 }
@@ -534,6 +538,25 @@ h6 {
   line-height: 1;
   height: 70px;
   padding-bottom: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  width: 75%;
+  height: 1px;
+  background-color: transparent;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-box-shadow: 0 3px 20px 2px #fbac7d;
+  box-shadow: 0 3px 20px 2px #fbac7d;
+  bottom: 0;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 .btn__small {
@@ -560,6 +583,18 @@ h6 {
   margin: auto;
   bottom: -40px;
   font-size: 26px;
+}
+
+.btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#fb3715), color-stop(51%, #f5713d), to(#fb3715));
+  background: -webkit-linear-gradient(left, #fb3715 0%, #f5713d 51%, #fb3715 100%);
+  background: -o-linear-gradient(left, #fb3715 0%, #f5713d 51%, #fb3715 100%);
+  background: linear-gradient(to right, #fb3715 0%, #f5713d 51%, #fb3715 100%);
+}
+
+.btn:hover:after {
+  -webkit-box-shadow: 0 3px 20px 2px #fb3715;
+  box-shadow: 0 3px 20px 2px #fb3715;
 }
 
 /* sale sticker */
@@ -1385,6 +1420,10 @@ h6 {
   position: relative;
 }
 
+.add-review__form_bottom-indent {
+  padding-bottom: 25px;
+}
+
 .add-review__title {
   font-size: 20px;
   font-weight: 500;
@@ -1397,6 +1436,11 @@ h6 {
   color: #444;
   text-align: center;
   margin-bottom: 24px;
+}
+
+.add-review__desc_answer {
+  width: 100%;
+  margin-bottom: 0;
 }
 
 /* .popup yopt*/

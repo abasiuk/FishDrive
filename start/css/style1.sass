@@ -237,6 +237,8 @@
 		padding: 23px 20px 23px 57px
 		font-size: 17px	
 		width: 100%
+		&_fix-width
+			width: 260px
 	&_big
 		width: 550px
 		.default-input__input
@@ -260,7 +262,7 @@
 	margin-top: 3px	
 	width: 100%	
 	border: none
-	box-shadow: inset 0px -5px 0px #d76622
+	box-shadow: inset 0px -5px 0px #d76622 
 	background: rgba(255,98,0,1)
 	background: -moz-linear-gradient(left, rgba(255,98,0,1) 0%, rgba(245,131,61,1) 51%, rgba(255,98,0,1) 100%)
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,98,0,1)), color-stop(51%, rgba(245,131,61,1)), color-stop(100%, rgba(255,98,0,1)))
@@ -275,6 +277,21 @@
 	line-height: 1
 	height: 70px
 	padding-bottom: 5px	
+	cursor: pointer
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		width: 75%
+		height: 1px
+		background-color: transparent
+		left: 0
+		right: 0
+		margin: auto
+		box-shadow: 0 3px 20px 2px #fbac7d
+		bottom: 0
+		transition: all .3s linear
+		
 	&__small
 		font-size: 17px
 		display: block	
@@ -295,7 +312,10 @@
 		margin: auto
 		bottom: -40px
 		font-size: 26px
-
+	&:hover
+		background: linear-gradient(to right, rgba(251,55,21,1) 0%, rgba(245,113,61,1) 51%, rgba(251,55,21,1) 100%)
+		&:after
+			box-shadow: 0 3px 20px 2px #fb3715
 /* sale sticker */
 .sale
 	width: 75px
@@ -846,6 +866,8 @@
 		display: flex
 		justify-content: space-between
 		position: relative
+		&_bottom-indent
+			padding-bottom: 25px
 	&__title
 		font-size: 20px
 		font-weight: 500
@@ -856,6 +878,9 @@
 		color: #444
 		text-align: center
 		margin-bottom: 24px
+		&_answer
+			width: 100%
+			margin-bottom: 0
 /* .popup yopt*/
 .popup
 	display: -webkit-flex !important
