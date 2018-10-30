@@ -81,13 +81,13 @@
 						</div>
 						<!-- /.price -->
 						<p class="form__second-desc">Осталось <span class="lastpack main-color">15</span> упаковок<br> по Акции</p>
-						<label for="name" class="form__label">
-							<input type="text" id="name" name="name" placeholder="Имя" required="required" class="form__input">
+						<label for="name" class="default-input default-input_name">
+							<input type="text" id="name" name="name" placeholder="Имя" required="required" class="default-input__input">
 						</label>
-						<label for="phone" class="form__label">
-							<input type="text" id="phone" name="phone" placeholder="Телефон" required="required" class="form__input">
+						<label for="phone" class="default-input default-input_phone">
+							<input type="text" id="phone" name="phone" placeholder="Телефон" required="required" class="default-input__input">
 						</label>
-						<button class="btn">Заказать <small class="btn__small">со скидкой</small></button>
+						<button type="submit" class="btn">Заказать <small class="btn__small">со скидкой</small></button>
 					</form>
 					<!-- /.main-form -->
 					<p class="sequrity">Ваши данные защищены!</p>
@@ -351,8 +351,39 @@
 			</div>
 		</section>
 		<!-- /.fish-info -->
-		<section class="how-use" style="height: 932px; border-top: 1px solid red">
-			<div class="container"></div>
+		<section class="how-use bg-dark" style="height: auto; border-top: 1px solid red">
+			<div class="container">
+				<h2 class="second-title">Как использовать <strong class="second-title_green">Fish Drive</strong></h2>
+				<div class="how-use-block">
+					<div class="how-use__item">
+						<img src="images/how-use-1.png" alt="" class="how-use__pic">
+						<h3 class="how-use__title">Разбавьте</h3>
+						<span class="how-use__desc">порошок небольшим количеством воды</span>
+					</div>
+					<div class="how-use__item">
+						<img src="images/how-use-2.png" alt="" class="how-use__pic">
+						<h3 class="how-use__title">Добавьте</h3>
+						<span class="how-use__desc">полученную смесь в обычный прикорм (1 саше-пакет на 1,5 кг прикорма)</span>
+					</div>
+					<div class="how-use__item">
+						<img src="images/how-use-3.png" alt="" class="how-use__pic">
+						<h3 class="how-use__title">Прикармливайте</h3>
+						<span class="how-use__desc">как обычно. Приманка начинает действовать в воде через 10 секунд.</span>
+					</div>
+					<div class="how-use__item">
+						<img src="images/how-use-4.png" alt="" class="how-use__pic">
+						<h3 class="how-use__title">Тащите</h3>
+						<span class="how-use__desc">рыбу!</span>
+					</div>
+				</div>
+				<!-- /.how-use-block -->
+				<div class="product-cane">
+					<div class="sale sale_right">-50 <span class="sale__persent">%</span></div>
+					<img src="images/product.png" alt="" class="product-cane__pic">
+					<button class="btn btn_pack">Заказать <small class="btn__small">со скидкой</small></button>
+				</div>
+				<!-- /.product-cane -->
+			</div>
 		</section>
 		<!-- /.how-use -->
 		<section class="comparison" style="height: 1130px; border-top: 1px solid red">
@@ -410,36 +441,266 @@
 			</div>
 		</section>
 		<!-- /.comparison -->
-		<section class="prof-review" style="height: 738px; border-top: 1px solid red">
-			<div class="container"></div>
+		<section class="prof-review bg-dark">
+			<div class="container">
+				<h2 class="second-title">Профессионалы – <span class="one-word">за <strong class="second-title_green">Fish Drive</strong></span></h2>
+				<div class="champion">
+					<div class="champion__header">
+						<span class="champion__name">Олег Матвеев</span>
+						<span class="champion__post">призер Чемпионата Европы по рыбной ловле <span class="one-word">в 2017 году</span></span>
+						<img src="images/champion.jpg" alt="" class="champion__pic">	
+					</div>
+					<div class="champion__content">
+						<p class="champion__desc">Во время рыбалки помните о прописных истинах: рыба не любит запах табака, пота, бензина (масла, мазута…), не любит запаха животных, питающихся рыбой, не любит запахи некоторых растений. Чтобы не отпугнуть рыбу, помойте руки и не курите, когда прикармливаете рыбу или насаживаете наживку.</p>
+						<p class="champion__desc">А есть запахи, от которых рыба с ума сходит. В детстве мы, отправляясь за крупной рыбой, брали черный хлеб, добавляли в него всякие пахучие масла, травы. Самым крутым ароматом тогда, помню, считались анисовые капли. Иногда кому-то из нас везло, всем остальным оставалось только завидовать. Сейчас я не полагаюсь слепо на удачу. Я могу сам выбрать, какую рыбу возьму.</p>
+						<p class="champion__total">Самый действенный метод – прикормить место <span class="one-word">с Fish Drive.</span> С ним мне везет по-крупному!</p>
+					</div>
+				</div>
+				<!-- /.champion -->
+			</div>
 		</section>
 		<!-- /.prof-review -->
 		<section class="review" style="height: 1270px; border-top: 1px solid red">
-			<div class="container"></div>
+			<div class="container">
+				<h2 class="second-title">Отзывы рыбаков,<br>которые ловят <strong class="second-title_orange">самую большую рыбу</strong> с <strong class="second-title_green">Fish Drive</strong></h2>
+				<div class="review-block">
+					<div class="review__item">
+						<img src="images/review-1.jpg" alt="" class="review__pic">
+						<span class="review__name">Максим Черный, 36 лет</span>
+						<span class="review__experience">стаж рыбалки - 4 года</span>
+						<p class="review__info">Я часто беру новые наживки, снасти, меняю место - люблю экспериментировать, а из того, чем стабильно пользуюсь уже год и менять не собираюсь - аттрактант Фишдрайв. В прошлую субботу я взял судачину - 82 см.  червя - и уже пятую рыбалку всех уделываю.</p>
+						<div class="review__more">+</div>
+					</div>
+					<div class="review__item">
+						<img src="images/review-1.jpg" alt="" class="review__pic">
+						<span class="review__name">Максим Черный, 36 лет</span>
+						<span class="review__experience">стаж рыбалки - 4 года</span>
+						<p class="review__info">Я часто беру новые наживки, снасти, меняю место - люблю экспериментировать, а из того, чем стабильно пользуюсь уже год и менять не собираюсь - аттрактант Фишдрайв. В прошлую субботу я взял судачину - 82 см.  червя - и уже пятую рыбалку всех уделываю.</p>
+						<div class="review__more">+</div>
+					</div>
+					<div class="review__item">
+						<img src="images/review-1.jpg" alt="" class="review__pic">
+						<span class="review__name">Максим Черный, 36 лет</span>
+						<span class="review__experience">стаж рыбалки - 4 года</span>
+						<p class="review__info">Я часто беру новые наживки, снасти, меняю место - люблю экспериментировать, а из того, чем стабильно пользуюсь уже год и менять не собираюсь - аттрактант Фишдрайв. В прошлую субботу я взял судачину - 82 см.  червя - и уже пятую рыбалку всех уделываю.</p>
+						<div class="review__more">+</div>
+					</div>
+					<div class="review__item">
+						<img src="images/review-1.jpg" alt="" class="review__pic">
+						<span class="review__name">Максим Черный, 36 лет</span>
+						<span class="review__experience">стаж рыбалки - 4 года</span>
+						<p class="review__info">Я часто беру новые наживки, снасти, меняю место - люблю экспериментировать, а из того, чем стабильно пользуюсь уже год и менять не собираюсь - аттрактант Фишдрайв. В прошлую субботу я взял судачину - 82 см.  червя - и уже пятую рыбалку всех уделываю.</p>
+						<div class="review__more">+</div>
+					</div>
+				</div>
+				<!-- /.review-block -->
+				<div class="add-review">
+					<h3 class="add-review__title">Хотите поделиться своим опытом использования Fish Drive?</h3>
+					<p class="add-review__desc">Оставьте текстовый отзыв с фотографией или видеоотзыв. Раз в месяц мы отбираем 3 отзыва и дарим авторам<br> СКИДКУ на следующий заказ.</p>
+					<div class="add-review__form">
+						<label for="add-review__name" class="default-input default-input_name">
+							<input type="text" name="add-review__name" class="default-input__input" required="required" placeholder="Имя">
+						</label>
+						<label for="add-review__phone" class="default-input default-input_phone">
+							<input type="text" name="add-review__phone" class="default-input__input" required="required" placeholder="Телефон">
+						</label>
+						<label for="add-review__review" class="default-input default-input_big">
+							<input type="text" name="add-review__review" class="default-input__input" placeholder="Отзыв">
+						</label>
+						<button class="btn btn_review">Отправить отзыв</button>
+					</div>
+				</div>
+				<!-- /.add-review -->
+			</div>
 		</section>
 		<!-- /.review -->
-		<section class="video-review" style="height: 705px; border-top: 1px solid red">
-			<div class="container"></div>
+		<section class="video-review bg-dark">
+			<div class="container">
+				<h2 class="second-title">Аудио и видео отзывы</h2>
+				<div class="video">
+					<div class="video__item">
+						<div class="youtube" id="OAvw29GJHj0" style="width:340px; height:195px; max-width: 100%;"></div>
+					</div>
+					<!-- /.video__item -->
+					<div class="video__item">
+						<div class="youtube" id="kL0SIgQmpk4" style="width:340px; height:195px; max-width: 100%;"></div>
+					</div>
+					<!-- /.video__item -->
+					<div class="video__item">
+						<div class="youtube" id="rIHfRzieMlA" style="width:340px; height:195px; max-width: 100%;"></div>
+					</div>
+					<!-- /.video__item -->
+				</div>
+				<!-- /.video -->
+			</div>
 		</section>
 		<!-- /.video-review -->
 		<section class="how-order" style="height: 657px; border-top: 1px solid red">
 			<div class="container"></div>
 		</section>
 		<!-- /.how-order -->
-		<section class="main-head main-head_bottom" style="height: 780px; border-top: 1px solid red">
-			<div class="container"></div>
+		<section class="main-head main-head_bottom bg-dark" >
+			<div class="container">
+				<div class="top-line top-line_last">
+					<ul class="fish-list">
+						<li class="fish-list__item">Крупная речная<br>рыба</li>
+						<li class="fish-list__item">Крупная морская<br>рыба</li>
+						<li class="fish-list__item">Хищная<br>рыба</li>
+						<li class="fish-list__item">Мирная<br>рыба</li>
+					</ul>
+					<!-- /.fish-list -->
+				</div>
+				<!-- /.top-line -->
+
+				<div class="main-title">
+					<h1 class="main-title__big">Приманка <strong class="main-color">Fish Drive:</strong></h1>
+					<p class="main-title__desc">добудь самый большой<br>рыбный трофей уже <span class="one-word">на первом</span><br>часу рыбалки</p>
+				</div>
+				<!-- /.main-title -->
+
+				<div class="main-content">
+					<div class="main-product">
+						<img src="images/big-product.png" alt="" class="main-product__pic">
+						<img src="images/product-onepack.png" alt="" class="main-product__small">
+					</div>
+					<!-- /.main-product -->
+					<div class="advantages">
+						<ul class="advantages__list">
+							<li class="advantages__item">
+								<h3 class="advantages__title">Действует всегда:</h3>
+								<span class="advantages__info">при любой погоде в любой воде и в любое время суток</span>
+							</li>
+							<li class="advantages__item">
+								<h3 class="advantages__title">Длительный клев с первых минут:</h3>
+								<span class="advantages__info">приманка расходится по воде за 10 секунд и держится 3-4 часа</span>
+							</li>
+							<li class="advantages__item">
+								<h3 class="advantages__title">Клюет только крупная рыба</h3>
+								<span class="advantages__info">приманка действует только на действительно здоровых рыб</span>
+							</li>
+						</ul>
+						<p class="advantages__desc">Хватает на 15 кг прикорма и на 40 часов сумасшедшего клева</p>
+					</div>
+					<!-- /.advantages -->
+					<div class="wrap-form">
+						<form action="/submit" class="form" method="post">
+							<div class="sale">-50<span class="sale__persent">%</span></div>
+							<!-- /.sale -->
+							<p class="form__desc">Успейте заказать<br> по промо-цене <br><span class="form__desc_orange">до <span class="form__desc_date">01.09.2018</span></span></p>
+							<div class="price">
+								<div class="price__old">
+									<span class="price__text">Старая цена</span>
+									<span class="price__value">
+										<span class="price__number">1400</span>
+										<span class="price__currency">руб.</span>
+									</span>
+								</div>
+								<div class="price__new">
+									<span class="price__text">Новая цена</span>
+									<span class="price__value">
+										<span class="price__number">690</span>
+										<span class="price__currency">руб.</span>
+									</span>
+								</div>
+							</div>
+							<!-- /.price -->
+							<p class="form__second-desc">Осталось <span class="lastpack main-color">15</span> упаковок<br> по Акции</p>
+							<label for="name" class="default-input default-input_name">
+								<input type="text" id="name" name="name" placeholder="Имя" required="required" class="default-input__input">
+							</label>
+							<label for="phone" class="default-input default-input_phone">
+								<input type="text" id="phone" name="phone" placeholder="Телефон" required="required" class="default-input__input">
+							</label>
+							<button type="submit" class="btn">Заказать <small class="btn__small">со скидкой</small></button>
+						</form>
+						<!-- /.main-form -->
+						<p class="sequrity">Ваши данные защищены!</p>
+					</div>
+				</div>
+				<!-- /.main-content -->
+			</div>
 		</section>
 		<!-- /.main-head.main-head_bottom -->
 	</main>
-	<footer class="main-footer" style="height: 223px; border-top: 1px solid red">
-		<div class="container">
-			
+	<footer class="main-footer">
+		<div class="container flex">
+			<div class="footer__company">
+				<img src="images/everad.svg" alt="" class="footer__logo">
+				<span class="footer__name">Папиловит<br>Coperight 2018</span>
+			</div>
+			<!-- /.footer__company -->
+			<div class="footer__info">
+				<a href="/privacy.html" target="_blank" class="footer__link">Политика конфидециальности</a>
+				<span class="footer__address">г.Тверь, Петербургское шоссе, дом 53 а</span>
+			</div>
+			<!-- /.footer__info -->
+			<div class="footer__code">
+				<span>ИНН 7707251637<br>ОГРН 1157735921758</span>
+			</div>
 		</div>
 	</footer>
 	<!-- /.main-footer -->
+
+	<div class="ever-popup-build">
+		<div class="popup bg-dark" id="cloneThis">
+			<div class="popup__prod">
+				<div class="logo logo_popup">
+					<img src="images/logo.png" alt="" class="logo__pic">
+				</div>
+				<!-- /.logo -->
+				<div class="product-cane product-cane_popup">
+					<img src="images/product.png" alt="" class="product-cane__pic">
+				</div>
+				<!-- /.product-cane -->
+			</div>
+			<div class="popup__form">
+				<div class="wrap-form">
+					<form action="/submit" class="form form_popup" method="post">
+						<div class="sale">-50<span class="sale__persent">%</span></div>
+						<!-- /.sale -->
+						<p class="form__desc">Успейте заказать<br> по промо-цене <br><span class="form__desc_orange">до <span class="form__desc_date">01.09.2018</span></span></p>
+						<div class="price">
+							<div class="price__old">
+								<span class="price__text">Старая цена</span>
+								<span class="price__value">
+									<span class="price__number">1400</span>
+									<span class="price__currency">руб.</span>
+								</span>
+							</div>
+							<div class="price__new">
+								<span class="price__text">Новая цена</span>
+								<span class="price__value">
+									<span class="price__number">690</span>
+									<span class="price__currency">руб.</span>
+								</span>
+							</div>
+						</div>
+						<!-- /.price -->
+						<p class="form__second-desc">Осталось <span class="lastpack main-color">15</span> упаковок<br> по Акции</p>
+						<label for="name" class="default-input default-input_name">
+							<input type="text" id="name" name="name" placeholder="Имя" required="required" class="default-input__input">
+						</label>
+						<label for="phone" class="default-input default-input_phone">
+							<input type="text" id="phone" name="phone" placeholder="Телефон" required="required" class="default-input__input">
+						</label>
+						<button type="submit" class="btn">Заказать <small class="btn__small">со скидкой</small></button>
+					</form>
+					<!-- /.main-form -->
+					<p class="sequrity sequrity_popup">Ваши данные защищены!</p>
+				</div>
+			</div>
+		</div>
+		<!-- /.popup -->
+	</div>
+	<!-- /.ever-popup-build -->
+
 	<script src="js/jquery-2.2.3.min.js"></script>
-	<script src="pixelScreen.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/youtube.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/everad.js"></script>
+
+	<script src="pixelScreen.js"></script>
 </body>
 </html>
