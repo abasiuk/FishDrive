@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", function() {
 			  }
 		  	},
 		  	{
-			  breakpoint: 1023,
+			  breakpoint: 1025,
 			  settings: {
 			    slidesToShow: 2,
 			    arrows: false,
@@ -51,7 +51,6 @@ window.addEventListener("DOMContentLoaded", function() {
 
 	/* add review button */
 	var addReview = document.querySelector("#add-review__btn");
-	console.log(addReview);
 
 	addReview.addEventListener('click', function () {
 		

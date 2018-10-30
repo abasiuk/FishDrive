@@ -96,7 +96,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /*header*/
 .main-head {
-  padding-top: 25px; }
+  padding-top: 25px;
+  padding-bottom: 3px; }
 
 .top-line {
   display: -webkit-flex;
@@ -597,7 +598,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* action section */
 .action {
-  padding: 87px 0;
+  padding: 84px 0;
   background: url(../images/cane.png) -webkit-calc(100% + 200px) bottom no-repeat, url(../images/main-bg.png) center no-repeat;
   background: url(../images/cane.png) calc(100% + 200px) bottom no-repeat, url(../images/main-bg.png) center no-repeat;
   -webkit-background-size: auto, cover;
@@ -734,7 +735,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* how use section*/
 .how-use {
-  padding-top: 79px; }
+  padding-top: 85px; }
   .how-use-block {
     display: -webkit-flex;
     display: -moz-flex;
@@ -825,7 +826,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* profesional review */
 .prof-review {
-  padding-top: 77px;
+  padding-top: 84px;
   padding-bottom: 64px; }
 
 /* champion block */
@@ -967,7 +968,7 @@ h1, h2, h3, h4, h5, h6 {
 /* reviews all */
 .review {
   padding-top: 84px;
-  padding-bottom: 10px; }
+  padding-bottom: 30px; }
   .review-block {
     padding-top: 73px; }
   .review__item {
@@ -1136,7 +1137,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* poll */
 .poll {
-  padding-top: 151px;
+  padding-top: 149px;
   padding-bottom: 89px; }
   .poll h2 {
     width: 70%;
@@ -1324,7 +1325,8 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 3px #fff, 0 6px #fff; }
 
 .fish-info {
-  padding-top: 87px; }
+  padding-top: 93px;
+  padding-bottom: 71px; }
   .fish-info .container::after {
     display: block;
     height: 131px;
@@ -1524,8 +1526,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* .comparison */
 .comparison {
-  padding-top: 148px;
-  padding-bottom: 88px;
+  padding-top: 149px;
+  padding-bottom: 84px;
   background-color: #fff; }
   .comparison h2 {
     margin-bottom: 51px; }
@@ -2030,8 +2032,10 @@ div.adaptiv-table__head {
     padding: 0 10px; }
   .champion__pic {
     width: 500px; }
-  .video__item {
-    width: 330px; }
+  .video {
+    padding-bottom: 105px; }
+    .video__item {
+      width: 330px; }
   .top-line_last {
     display: none; }
   .main-head_bottom {
@@ -2150,7 +2154,9 @@ div.adaptiv-table__head {
         -ms-flex-pack: distribute;
             justify-content: space-around; }
   .default-input_big {
-    width: 100%; } }
+    width: 100%; }
+  .video-review {
+    padding-top: 40px; } }
 
 @media all and (max-width: 768px) {
   .container {
@@ -2280,7 +2286,16 @@ div.adaptiv-table__head {
   .add-review__desc br {
     display: none; }
   .btn_review {
-    width: 100%; } }
+    width: 100%; }
+  .prof-review {
+    padding-bottom: 30px;
+    padding-top: 50px; }
+  .review {
+    padding-top: 50px; }
+  .how-use {
+    padding-top: 50px; }
+  .second-title {
+    font-size: 26px; } }
 
 /*****MEDIA*****/
 /** .poll **/
@@ -2431,7 +2446,11 @@ div.adaptiv-table__head {
       padding-right: 0px;
       max-width: 341px; }
     .fish-info__recipe-body {
-      padding-top: 64px; } }
+      padding-top: 64px; }
+  .how-order__item b {
+    font-size: 22px; }
+  .how-order {
+    padding-bottom: 64px; } }
 
 @media all and (max-width: 768px) {
   #ascrail2000 {
@@ -2483,7 +2502,9 @@ div.adaptiv-table__head {
   .fish-info--show .fish-info__btn {
     margin-right: 0; }
   .fish-info__row:last-child .fish-info--show {
-    margin-bottom: 120px; } }
+    margin-bottom: 120px; }
+  .how-order {
+    padding-top: 64px; } }
 
 @media all and (max-width: 480px) {
   #ascrail2000 {
@@ -2546,7 +2567,7 @@ div.adaptiv-table__head {
     .comparison__record p:first-child {
       margin-left: 68px; } }
 
-@media all and (max-width: 1023px) {
+@media all and (max-width: 1024px) {
   .comparison h2 {
     width: 91%; }
   .comparison__table::before {
@@ -2629,17 +2650,19 @@ div.adaptiv-table__head {
     left: -84%; }
   .adaptiv-table .slick-next {
     left: 73%; }
-  .comparison__check {
-    left: 5px; }
-  .comparison__bottom {
-    max-width: 100%; }
-  .comparison__record {
+  .comparison {
     padding-bottom: 50px; }
-  .comparison__record p:first-child {
-    margin-bottom: 20px; }
-  .comparison__record::before {
-    left: 41%;
-    top: 72%; } }
+    .comparison__check {
+      left: 5px; }
+    .comparison__bottom {
+      max-width: 100%; }
+    .comparison__record {
+      padding-bottom: 50px; }
+    .comparison__record p:first-child {
+      margin-bottom: 20px; }
+    .comparison__record::before {
+      left: 41%;
+      top: 72%; } }
 
 @media all and (max-width: 1285px) {
   .how-order__item:nth-child(1):before {
