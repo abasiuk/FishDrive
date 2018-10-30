@@ -42,6 +42,13 @@ window.addEventListener("DOMContentLoaded", function() {
 		  ]
 	});
 
+	$('.adaptiv-table__slick').slick({
+		dots: true,
+		slidesToShow: 1
+		
+		
+		
+	});
 
 	/* ban to input letters in phone box */
 	String.prototype.removeSpaces = function() {
@@ -82,5 +89,4 @@ window.addEventListener("DOMContentLoaded", function() {
 			}
 		});
 	});
-
 });

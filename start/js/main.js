@@ -83,4 +83,14 @@ window.addEventListener("DOMContentLoaded", function() {
 		});
 	});
 
+	$('.adaptiv-table__slick').slick({
+		dots: true,
+		slidesToShow: 1
+		
+		
+		
+	});
+
+	
+
 });
