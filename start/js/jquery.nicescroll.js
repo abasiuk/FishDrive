@@ -2772,7 +2772,7 @@
           cursoropacitymin: 1,
           cursorborderradius: "4px",
           emulatetouch: true
-
+          
 
     });
     }

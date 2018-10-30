@@ -185,7 +185,9 @@
 /*fish-info*/
 
 #ascrail2000
-	left: 84.5%!important
+	transform: translateX(656px)
+	left: 50% !important
+    
 
 #ascrail2000::before 
 	content: ""
@@ -218,18 +220,52 @@
 .fish-info
 	padding-top: 87px
 
+	& .container::after
+		
+	    display: block
+	    height: 131px
+    	margin-top: -120px
+	    width: 109%
+	    bottom: 0
+	    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 94%, white 100%)
+	    position: relative
+	    // box-shadow: 0px -30px 76px #ffffff 
+	    content: ""
+	    z-index: 6
+		
+
 	h2
-		margin-bottom: 81px
+		margin-bottom: 71px
 
 	&__table
 		height: 950px
+		padding-right: 73px
+		padding-top: 10px
+		width: 1250px
+		
+
+	
+
 
 	&__img
 		width: 471px
+		position: relative
 
 		img
 			max-width: 470px
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translateX(-50%) translateY(-50%)
 
+	&__row 
+		
+		min-height: 251px
+
+	&__row:last-child
+		margin-bottom: 90px
+
+	
 
 	&__descr
 		width: 371px
@@ -260,7 +296,7 @@
 			margin-right: 0px
 
 		&-head span::before
-			content: "";
+			content: ""
 			display: block
 			position: absolute
 			height: 31px
@@ -275,17 +311,39 @@
 		&-head span:last-of-type::before
 			background-image: url(../images/fish-info-weights.png)
 
+		&-body 
+			padding-top: 23px
+
+		&-body p 
+			font-size: 18px
+			line-height: 26px
+			max-width: 345px
+
+		&-body small
+			display: inline-block
+			font-size: 14px
+			line-height: 18px
+			color: #666666
+			margin-bottom: 5px
+
+
+
+
 	&__recipe
 		
-		width: 301px
-		padding-left: 30px
+		width: 277px
+		
+		position: relative
+		margin-left: 30px
 		
 		
 		&-head
 			border-bottom: 1px solid #d2d2d2
-			min-height: 75px
+			min-height: 82px
 			align-items: center
 			position: relative
+			padding-bottom: 10px
+			padding-right: 0px
 			
 		&-head::before
 			content: ""
@@ -304,11 +362,13 @@
 			line-height: 18px
 			color: #666666
 			position: relative
+			bottom: -84px
+			left: -46px
 
 
 		
 		&-body 
-			padding-top: 56px	
+			padding-top: 52px	
 		
 		&-body img
 			border-radius: 5px
@@ -316,18 +376,12 @@
 			font-size: 18px
 			line-height: 26px
 			color: #444444
-
-	&--hidden &__recipe-head p
-		bottom: -73px
-		left: -46px
-
-	&--hidden &__food
-		display: none 
-
-	&--hidden &__full
+		
+	&__food
 		display: none
 
-
+	&__full
+		display: none
 
 
 	&__btn
@@ -344,11 +398,233 @@
 		content: "+"
 		display: block
 		position: absolute
-		left: 31%
+		left: 29%
 		top: 10%
 		color: #fff
 		font-size: 18px
 		font-weight: 400
+ 
+	&--show
+		position: absolute
+		background-color: #fff
+		z-index: 5
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12)
+		padding-right: 30px
+		padding-left: 30px
+		padding-bottom: 23px
+		padding-top: 4px
+		left: -30px
+		border-radius: 5px
+		top: -4px
+    	
+	&__row:last-child &--show 
+		margin-bottom: 90px
+
+	&--show &__recipe-head
+		padding-right: 0px
+	
+	&--show &__recipe-body
+		
+		background-color: #fff
+		padding-top: 0
+		top: -7px
+		position: relative
+   		
+
+	&--show &__recipe-head p
+		bottom: 0px
+		left: 0px
+
+	&--show &__food
+		display: inline-block 
+		margin-bottom: 19px
+
+	&--show &__full
+		display: block
+		line-height: 27px
+
+		
+	&--show &__clip
+		display: none
+
+	&--show &__btn
+		background-color: #bdc877
+		margin-right: -6px
+
+	&--show &__btn::before
+		content: "_"
+		top: -17%
+		left: 32%
+    	
+
+	
 
 
+/* .comparison */
+
+.comparison
+	padding-top: 148px
+	
+	h2 
+		margin-bottom: 51px
+
+
+	&__table 
+		border: 1px solid rgba(0, 0, 0, 0.1)
+		border-radius: 5px
+		width: 100%
+		// min-height: 468px
+		position: relative
+
+	&__table::before
+		content: ""
+		display: block
+		position: absolute
+		min-height: 106%
+		width: 299px
+		background-color: #fff
+		top: -5px
+		right: 0
+		z-index: 0
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12)
+
+
+	&__table th 
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+			white-space: nowrap
+			padding-top: 23px 
+			padding-bottom: 23px
+			padding-left: 28px
+			text-align: left
+		
+
+	&__table td:nth-last-child(n+3),
+	&__table th:nth-last-child(n+3)
+		border-right: 1px solid rgba(0, 0, 0, 0.1)
+
+	
+	
+		
+
+	&__table td
+		font-size: 17px
+		color: #444444
+		text-align: left
+		padding-left: 26px
+		padding-right: 40px
+		padding-top: 26px
+		padding-bottom: 20px
+		// height: 75px
+
+	&__table tr:nth-child(2n) td 
+		background-color: #f5f5f5
+
+	&__table tr:nth-child(n + 3) td 
+		padding-top: 16px
+		padding-bottom: 17px
+	
+	&__table tbody tr:hover td 
+		background-color: #fbeadf
+
+	&__table th,
+	&__table td:first-child
+		font-weight: bold
+		font-size: 20px
+		line-height: 1.1
+
+	&__table td:first-child
+		width: 20.7%
+		padding-right: 20px
+	
+	&__table td:nth-child(2)
+		width: 27.2%
+
+	&__table td:nth-child(3)
+		width: 26.7%
+
+	&__table tr:last-child td 
+		padding-bottom: 18px
+
+	&__table tr:last-child td:last-child
+		position: relative
+
+	&__table tr:last-child td:last-child::before
+		content: ""
+		display: block
+		position: absolute
+		height: 129%
+		width: 100%
+		background-color: inherit
+		top: 0
+		left: 0
+		z-index: -1
+
+	&__table th:last-child
+		background-color: #f5f8f3
+
+	&__table th:last-child::before
+		content: ""
+		display: block
+		position: absolute
+		height: 110%
+		width: 100%
+		background-color: inherit
+		top: -6px
+		left: 0
+		z-index: -1
+
+
+	&__table td:last-child,
+	&__table th:last-child
+		position: relative
+		z-index: 5
+	
+	&__table td:last-child
+		padding-left: 65px
+		padding-right: 12px
+		font-size: 18px
+		line-height: 1.22
+		font-weight: 500
+
+	&__btn 
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: -58px
+		width: 87%
+		cursor: pointer
+
+	&__check
+		border-radius: 50%
+		height: 23px
+		width: 23px
+		background: linear-gradient(to right, #fca87f -37%, #fad077 48%, #fad077 48%, #fad077 48%, #fcaa7f 132%)
+		box-shadow: 1px 1px 0px 0px #e6af67
+		position: absolute
+		left: 24px
+		bottom: 50%
+		transform: translateY(50%)
+
+	&__check::before 
+		content: ""
+		display: block
+		position: absolute
+		height: 4px 
+		width: 10px 
+		border: 2px solid #000
+		border-radius: 2px 0 2px 0
+		border-top-color: transparent
+		border-right-color: transparent
+		 
+		top: 45%
+		left: 50%
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg)
+	
+
+
+
+
+
+
+	
 

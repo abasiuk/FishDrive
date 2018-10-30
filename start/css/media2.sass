@@ -1,4 +1,6 @@
 /*****MEDIA*****/
+
+/** .poll **/ 
 @media all and (max-width: 1199px)
 	.container
 		width: 1023px
@@ -105,3 +107,215 @@
 		&__do
 			margin-top: 18px
 			margin-bottom: 26px
+
+
+
+
+/** .fish-info**/
+
+@media all and (max-width: 1400px)
+	#ascrail2000
+		transform: translateX(565px)
+
+	.fish-info
+	
+		& .container::after
+			width: 100%
+
+		&__table 
+			padding-right: 56px
+			width: auto
+
+
+		&__row
+			justify-content: space-around
+
+
+		&__img 
+			max-width: 350px
+
+		&__img img 
+			width: 100%
+			height: auto
+
+
+
+@media all and (max-width: 1200px)
+	
+	#ascrail2000
+		transform: translateX(485px)
+		
+
+	.fish-info
+
+		&__table
+			padding-right: 70px
+
+		&__img
+			max-width: 270px
+
+		&__recipe-head
+			padding-right: 0
+			max-width: 257px
+
+		&--show &__btn
+			margin-right: 0px
+
+
+
+
+
+@media all and (max-width: 1023px)
+
+	#ascrail2000
+		transform: translateX(330px)
+
+	.fish-info
+		padding-top: 40px
+
+
+		&__table
+			padding-right: 30px
+
+		&__row
+			flex-wrap: wrap
+			justify-content: center
+			margin-bottom: 40px
+
+		&__row:last-child
+			margin-bottom: 80px
+
+		&__img
+			width: 100%
+			height: 180px
+			max-width: none
+
+		&__img img 
+			width: 55%
+
+		&__descr,
+		&__recipe
+			width: 40%
+
+		&__recipe-head
+			padding-right: 0px
+			max-width: 341px
+
+		&__recipe-body
+			padding-top: 64px
+
+
+
+@media all and (max-width: 768px)
+
+	#ascrail2000
+		transform: translateX(212px)
+
+	.fish-info
+	
+		h2 
+			margin-bottom: 40px
+
+		&__table
+			padding-right: 0
+			width: 95%
+			margin-left: auto
+			margin-right: auto
+
+		&__row
+			margin-bottom: 20px
+
+
+		&__descr,
+		&__recipe
+			width: 100%
+			margin-left: 0
+			padding-left: 47px
+			padding-right: 40px
+			text-align: center
+			
+		&__descr-head,
+		&__recipe-head
+			padding-bottom: 0
+			min-height: 70px
+
+		&__descr-head
+			justify-content: center
+
+		&__recipe-head p 
+
+			bottom: -67px
+			left: 100px
+
+
+		&__recipe-body
+			padding-top: 45px
+
+		&__recipe-body p 
+			font-size: 16px
+			line-height: 1.45
+			
+		&__descr-body
+			padding-top: 16px
+			
+		&__descr-body p
+			font-size: 16px
+			line-height: 1.45
+
+
+		&--show
+			width: 92%
+			left: 50%
+			transform: translateX(-50%)
+			
+
+		&--show &__btn
+			margin-right: 0
+
+		&__row:last-child &--show 
+			margin-bottom: 120px
+
+
+@media all and (max-width: 480px)
+
+	#ascrail2000
+		transform: translateX(136px)
+
+	.fish-info
+
+		&__img img
+			width: 80%
+
+		&__descr-head
+			flex-wrap: wrap
+			justify-content: space-between
+
+		&__descr-head h3
+			font-size: 22px
+			width: 100%
+
+		&__descr-head span
+			font-size: 14px
+			margin: 0
+			padding-left: 35px
+
+		&__descr-head span::before
+			top: -33%
+			left: 9px
+			height: 24px
+			width: 24px
+			background-size: contain
+
+		&__recipe-head p 
+			left: 32px
+
+		&__food
+			max-width: 200px
+
+		&--show &__btn
+			margin-right: -2px
+
+		&--show &__recipe-head::before
+			left: 6px
+
+
