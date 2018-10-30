@@ -1,20 +1,4 @@
 window.addEventListener("DOMContentLoaded", function() {
-
-	/* more btn */
-	var allbtn = document.querySelectorAll(".review__more");
-
-	[].forEach.call( allbtn, function (item) {
-		item.addEventListener('click', function() {
-			if (!item.parentNode.querySelector(".review__text").classList.contains("review__text_full")){
-				item.parentNode.querySelector(".review__text").classList.add("review__text_full");
-				item.classList.add("review__more_minus");
-			}else{
-				item.parentNode.querySelector(".review__text").classList.remove("review__text_full");
-				item.classList.remove("review__more_minus");
-			}
-		});
-	});
-
   
 	var fishInfoBtn = document.querySelectorAll(".fish-info__btn");
 
@@ -31,8 +15,46 @@ window.addEventListener("DOMContentLoaded", function() {
 		slidesToShow: 3,
 		arrows: true,
 		speed: 500,
-		variableWidth: true,
-		centerMode: true
+		centerMode: true,
+		centerPadding: 0,
+		responsive: [{
+			  breakpoint: 1285,
+			  settings: {
+			    arrows: false,
+			  }
+		  	},
+		  	{
+			  breakpoint: 1023,
+			  settings: {
+			    slidesToShow: 2,
+			    arrows: false,
+			    centerMode: false
+			  },
+			},
+			{
+			  breakpoint: 768,
+			  settings: {
+			    slidesToShow: 1,
+			    arrows: false,
+			    centerMode: false
+			  },
+			}
+		  ]
+	});
+
+	/* more btn */
+	var allbtn = document.querySelectorAll(".review__more");
+
+	[].forEach.call( allbtn, function (item) {
+		item.addEventListener('click', function() {
+			if (!item.parentNode.querySelector(".review__info").classList.contains("review__info_full")){
+				item.parentNode.querySelector(".review__info").classList.add("review__info_full");
+				item.innerHTML = "-";
+			}else{
+				item.parentNode.querySelector(".review__info").classList.remove("review__info_full");
+				item.innerHTML = "+";
+			}
+		});
 	});
 
 });
