@@ -191,7 +191,8 @@
 		margin: auto
 		width: 92px
 		height: 332px
-		background: url(../images/arrow-form.png) center no-repeat
+		background: url(../images/arrow-form.svg) center no-repeat
+		background-size: 92px 332px
 	&__desc
 		font-size: 18px
 		line-height: 1.11
@@ -236,6 +237,8 @@
 		padding: 23px 20px 23px 57px
 		font-size: 17px	
 		width: 100%
+		&_fix-width
+			width: 260px
 	&_big
 		width: 550px
 		.default-input__input
@@ -244,21 +247,22 @@
 		&:before
 			content: ''
 			position: absolute
-			width: 21px
-			height: 24px
+			width: 25px
+			height: 27px
 			background-size: cover
 			top: 0
 			bottom: 0
 			margin: auto
 			right: 23px
 			left: auto
-			background: url(../images/review-icon.png) center no-repeat
+			background: url(../images/review-icon.svg) center no-repeat
+			background-size: 25px 27px
 /* main button */
 .btn
 	margin-top: 3px	
 	width: 100%	
 	border: none
-	box-shadow: inset 0px -5px 0px #d76622
+	box-shadow: inset 0px -5px 0px #d76622 
 	background: rgba(255,98,0,1)
 	background: -moz-linear-gradient(left, rgba(255,98,0,1) 0%, rgba(245,131,61,1) 51%, rgba(255,98,0,1) 100%)
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,98,0,1)), color-stop(51%, rgba(245,131,61,1)), color-stop(100%, rgba(255,98,0,1)))
@@ -273,6 +277,21 @@
 	line-height: 1
 	height: 70px
 	padding-bottom: 5px	
+	cursor: pointer
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		width: 75%
+		height: 1px
+		background-color: transparent
+		left: 0
+		right: 0
+		margin: auto
+		box-shadow: 0 3px 20px 2px #fbac7d
+		bottom: 0
+		transition: all .3s linear
+		
 	&__small
 		font-size: 17px
 		display: block	
@@ -293,7 +312,10 @@
 		margin: auto
 		bottom: -40px
 		font-size: 26px
-
+	&:hover
+		background: linear-gradient(to right, rgba(251,55,21,1) 0%, rgba(245,113,61,1) 51%, rgba(251,55,21,1) 100%)
+		&:after
+			box-shadow: 0 3px 20px 2px #fb3715
 /* sale sticker */
 .sale
 	width: 75px
@@ -648,8 +670,8 @@
 			position: absolute
 			width: 19px
 			height: 17px
-			background: url(../images/coma-icon.png) center no-repeat
-			background-size: cover
+			background: url(../images/coma-icon.svg) center no-repeat
+			background-size: 19px 17px
 		&:before
 			top: 0
 			left: 0
@@ -705,7 +727,7 @@
 	padding-top: 83px
 
 .video
-	margin-top: 220px
+	margin-top: 60px
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -745,21 +767,34 @@
 /* reviews all */
 .review
 	padding-top: 84px
+	padding-bottom: 10px
 	&-block
 		padding-top: 73px
-		padding-bottom: 30px
 	&__item
 		width: 370px
-		margin: 10px 13px 25px
-		padding: 20px
+		margin: 25px 13px
+		padding: 20px 20px 40px
 		border-radius: 5px
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
 		background-color: #fff
 		text-align: center
 		position: relative
+		&.slick-center
+			position: relative
+			transition: top 1s linear
+			top: -20px
+			.review__more
+				display: none
+			.review__info
+				max-height: 400px
 	&__pic
 		display: block
 		margin-bottom: 20px
+		width: 330px
+		max-width: 100%
+		height: 190px
+		border-top-left-radius: 5px
+		border-top-right-radius: 5px
 	&__name
 		display: block
 		font-size: 20px	
@@ -797,6 +832,12 @@
 		line-height: 1.45
 		text-align: center
 		color: #444
+		max-height: 155px
+		overflow-y: hidden
+		transition: max-height .5s linear
+		&_full
+			max-height: 400px
+
 	&__more
 		width: 24px
 		height: 24px
@@ -810,10 +851,10 @@
 		margin: auto
 		bottom: -12px
 		box-shadow: 0 0 0 5px rgba(232,111,37,.12)
-
 /* add review */
 .add-review
-	margin-top: 31px
+	margin-top: 80px
+	padding-bottom: 60px
 	&__form
 		border-radius: 5px
 		border: 5px solid #ecf0d9
@@ -825,6 +866,8 @@
 		display: flex
 		justify-content: space-between
 		position: relative
+		&_bottom-indent
+			padding-bottom: 25px
 	&__title
 		font-size: 20px
 		font-weight: 500
@@ -835,6 +878,9 @@
 		color: #444
 		text-align: center
 		margin-bottom: 24px
+		&_answer
+			width: 100%
+			margin-bottom: 0
 /* .popup yopt*/
 .popup
 	display: -webkit-flex !important

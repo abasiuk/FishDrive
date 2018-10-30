@@ -83,6 +83,9 @@
 			padding-top: 70px
 	.main-footer
 		padding-top: 60px
+	.review
+		&__item
+			width: 310px
 @media all and (max-width: 1024px)
 	.container
 		width: 767px
@@ -140,6 +143,8 @@
 	.video
 		flex-wrap: wrap
 		justify-content: space-around
+		margin-top: 45px
+		padding-bottom: 45px
 		&__item
 			margin-bottom: 30px
 			max-width: 100%
@@ -167,6 +172,16 @@
 			.product-cane
 				&__pic
 					margin-top: 0
+	.review
+		&-block
+			padding-top: 15px
+	.add-review
+		&__form
+			flex-wrap: wrap;
+			justify-content: space-around
+	.default-input
+		&_big
+			width: 100%
 @media all and (max-width: 768px)
 	.container	
 		width: 479px
@@ -245,6 +260,13 @@
 		margin-right: 0
 	.main-footer
 		padding: 20px 0
+	.review
+		&__pic
+			width: 100%
+			height: auto
+	.add-review
+		&__desc
+			font-size: 16px
 @media all and (max-width: 480px)
 	.container	
 		width: 320px
@@ -270,3 +292,10 @@
 	.btn_pack
 		width: 100%
 		bottom: -30px
+	.add-review
+		&__desc
+			br
+				display: none
+	.btn
+		&_review
+			width: 100%
