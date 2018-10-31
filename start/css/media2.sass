@@ -393,6 +393,18 @@
 		&__bottom
 			max-width: 79%
 
+		&__record p:last-child::before
+			height: 160%
+			left: -25px 
+			top: -16px
+
+		&__record p:last-child::after
+			height: 6px
+			width: 6px 
+			left: -29px 
+			top: 25px
+			
+
 
 @media all and (max-width: 768px)
 	
@@ -427,6 +439,19 @@
 		&__bottom
 			max-width: 84%
 			font-size: 22px
+
+
+		&__record p:last-child::before
+			height: 1px
+			width: 100%
+			left: 0px 
+			top: -22px
+
+		&__record p:last-child::after
+			
+			left: 50% 
+			top: -28.5px
+			transform: rotate(135deg) translateY(-50%)
 	
 	.adaptiv-table
 		display: flex
@@ -502,6 +527,17 @@
 			left: 41%
 			top: 72%
     		
+		&__record p:last-child::before
+			height: 1px
+			width: 100%
+			left: 0px 
+			top: -12px
+
+		&__record p:last-child::after
+			
+			left: 46% 
+			top: -16.5px
+			transform:  rotate(135deg) 
 
 
 

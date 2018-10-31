@@ -188,6 +188,9 @@
 	transform: translateX(656px)
 	left: 50% !important
     
+ 
+
+  
 
 #ascrail2000::before 
 	content: ""
@@ -692,6 +695,32 @@
 		margin-left: 45px
 		font-weight: bold
 		font-size: 18px		
+		position: relative
+
+	&__record p:last-child::before
+		content: ""
+		display: block
+		position: absolute
+		height: 200%
+		width: 1px 
+		background-color: rgba(0, 0, 0, 0.13)
+		left: -25px 
+		top: -16px
+
+	&__record p:last-child::after
+		content: ""
+		display: block
+		position: absolute
+		height: 6px
+		width: 6px 
+		background-color: #f5f8f3
+		border: 1px solid rgba(0, 0, 0, 0.15)
+		border-left-color: transparent
+		border-bottom-color: transparent
+		left: -29px 
+		top: 8px
+		transform: rotate(45deg)
+
 
 	&__bottom 
 		font-size: 26px
