@@ -205,10 +205,6 @@
 }
 
 @media only screen and (max-width: 1190px) {
-  .container {
-    max-width: 1024px;
-  }
-
   .audiojs .scrubber {
     left: 30px;
     max-width: 170px;
@@ -224,7 +220,7 @@
   }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   .container {
     max-width: 768px;
   }

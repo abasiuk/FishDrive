@@ -138,6 +138,7 @@ h6 {
 
 .main-head {
   padding-top: 25px;
+  padding-bottom: 3px;
 }
 
 .top-line {
@@ -785,7 +786,7 @@ h6 {
 /* action section */
 
 .action {
-  padding: 87px 0;
+  padding: 84px 0;
   background: url("../images/cane.png") -webkit-calc(100% + 200px) bottom no-repeat, url("../images/main-bg.png") center no-repeat;
   background: url("../images/cane.png") calc(100% + 200px) bottom no-repeat, url("../images/main-bg.png") center no-repeat;
   -webkit-background-size: auto, cover;
@@ -973,7 +974,7 @@ h6 {
 /* how use section*/
 
 .how-use {
-  padding-top: 79px;
+  padding-top: 85px;
 }
 
 .how-use-block {
@@ -1087,7 +1088,7 @@ h6 {
 /* profesional review */
 
 .prof-review {
-  padding-top: 77px;
+  padding-top: 84px;
   padding-bottom: 64px;
 }
 
@@ -1270,7 +1271,7 @@ h6 {
 
 .review {
   padding-top: 84px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .review-block {
@@ -1488,7 +1489,7 @@ h6 {
 /* poll */
 
 .poll {
-  padding-top: 151px;
+  padding-top: 149px;
   padding-bottom: 89px;
 }
 
@@ -1741,7 +1742,8 @@ h6 {
 }
 
 .fish-info {
-  padding-top: 87px;
+  padding-top: 93px;
+  padding-bottom: 71px;
 }
 
 .fish-info .container::after {
@@ -2021,8 +2023,8 @@ h6 {
 /* .comparison */
 
 .comparison {
-  padding-top: 148px;
-  padding-bottom: 88px;
+  padding-top: 149px;
+  padding-bottom: 84px;
   background-color: #fff;
 }
 
@@ -2743,6 +2745,10 @@ div.adaptiv-table__head {
     width: 500px;
   }
 
+  .video {
+    padding-bottom: 105px;
+  }
+
   .video__item {
     width: 330px;
   }
@@ -2944,6 +2950,10 @@ div.adaptiv-table__head {
 
   .default-input_big {
     width: 100%;
+  }
+
+  .video-review {
+    padding-top: 40px;
   }
 }
 
@@ -3166,6 +3176,23 @@ div.adaptiv-table__head {
 
   .btn_review {
     width: 100%;
+  }
+
+  .prof-review {
+    padding-bottom: 30px;
+    padding-top: 50px;
+  }
+
+  .review {
+    padding-top: 50px;
+  }
+
+  .how-use {
+    padding-top: 50px;
+  }
+
+  .second-title {
+    font-size: 26px;
   }
 }
 
@@ -3422,6 +3449,14 @@ div.adaptiv-table__head {
   .fish-info__recipe-body {
     padding-top: 64px;
   }
+
+  .how-order__item b {
+    font-size: 22px;
+  }
+
+  .how-order {
+    padding-bottom: 64px;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -3505,6 +3540,10 @@ div.adaptiv-table__head {
 
   .fish-info__row:last-child .fish-info--show {
     margin-bottom: 120px;
+  }
+
+  .how-order {
+    padding-top: 64px;
   }
 }
 
@@ -3606,7 +3645,7 @@ div.adaptiv-table__head {
   }
 }
 
-@media all and (max-width: 1023px) {
+@media all and (max-width: 1024px) {
   .comparison h2 {
     width: 91%;
   }
@@ -3777,6 +3816,10 @@ div.adaptiv-table__head {
 
   .adaptiv-table .slick-next {
     left: 73%;
+  }
+
+  .comparison {
+    padding-bottom: 50px;
   }
 
   .comparison__check {
